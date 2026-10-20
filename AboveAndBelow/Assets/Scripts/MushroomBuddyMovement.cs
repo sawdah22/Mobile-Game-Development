@@ -3,10 +3,15 @@ using UnityEngine;
 public class MushroomBuddyMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    public float jumpForce = 7f;
+    public Transform groundCheck;
+    public float groundCheckRadius = 0.1f;
+    public LayerMask groundLayer;
     private Rigidbody2D rb;
     private float moveInput;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
+    private bool isGrounded;
 
     void Start()
     {
@@ -19,6 +24,11 @@ public class MushroomBuddyMovement : MonoBehaviour
     void Update()
     {
         moveInput = Input.GetAxis("Horizontal");
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        }
         animator.SetBool("isWalking", moveInput != 0);
         if (moveInput > 0)
         {
@@ -33,5 +43,14 @@ public class MushroomBuddyMovement : MonoBehaviour
     void FixedUpdate()
     {
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        if (groundCheck != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+        }
     }
 }
