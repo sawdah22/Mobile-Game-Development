@@ -6,6 +6,8 @@ public class PlayerSpawner : MonoBehaviour
     public GameObject hoodedAdventurerPrefab;
     public GameObject forestSpiritPrefab;
 
+    public Transform groundPlatform;
+
     void Start()
     {
         int selectedChartacter = PlayerPrefs.GetInt("SelectedCharacter", 0);
@@ -28,6 +30,9 @@ public class PlayerSpawner : MonoBehaviour
                 break;
         }
 
-        Instantiate(choosenPrefab, transform.position, Quaternion.identity);
+        GameObject player = Instantiate(choosenPrefab, transform.position, Quaternion.identity);
+
+        MushroomBuddyMovement movement = player.GetComponent<MushroomBuddyMovement>();
+        movement.groundPlatform = groundPlatform;
     }
 }
