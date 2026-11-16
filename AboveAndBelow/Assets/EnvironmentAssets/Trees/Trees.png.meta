@@ -109,7 +109,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -123,7 +123,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -147,7 +147,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -189,11 +189,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 160
-        width: 54
-        height: 96
+        y: 161
+        width: 53
+        height: 95
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -210,12 +210,12 @@ TextureImporter:
       name: Trees_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 94
-        width: 48
-        height: 67
+        x: 54
+        y: 161
+        width: 35
+        height: 78
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -232,12 +232,12 @@ TextureImporter:
       name: Trees_2
       rect:
         serializedVersion: 2
-        x: 53
-        y: 160
-        width: 37
-        height: 80
+        x: 90
+        y: 161
+        width: 72
+        height: 65
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -254,12 +254,12 @@ TextureImporter:
       name: Trees_3
       rect:
         serializedVersion: 2
-        x: 89
+        x: 163
         y: 160
-        width: 74
-        height: 67
+        width: 53
+        height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -276,12 +276,12 @@ TextureImporter:
       name: Trees_4
       rect:
         serializedVersion: 2
-        x: 89
+        x: 0
         y: 95
-        width: 59
-        height: 66
+        width: 47
+        height: 65
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -298,12 +298,12 @@ TextureImporter:
       name: Trees_5
       rect:
         serializedVersion: 2
-        x: 143
-        y: 122
-        width: 38
-        height: 38
+        x: 48
+        y: 95
+        width: 41
+        height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -320,12 +320,12 @@ TextureImporter:
       name: Trees_6
       rect:
         serializedVersion: 2
-        x: 162
-        y: 159
-        width: 55
-        height: 54
+        x: 90
+        y: 96
+        width: 57
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -342,12 +342,12 @@ TextureImporter:
       name: Trees_7
       rect:
         serializedVersion: 2
-        x: 187
-        y: 111
-        width: 38
-        height: 49
+        x: 144
+        y: 123
+        width: 36
+        height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -364,12 +364,12 @@ TextureImporter:
       name: Trees_8
       rect:
         serializedVersion: 2
-        x: 47
-        y: 94
-        width: 43
-        height: 56
+        x: 179
+        y: 138
+        width: 5
+        height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -386,12 +386,12 @@ TextureImporter:
       name: Trees_9
       rect:
         serializedVersion: 2
-        x: 175
-        y: 129
-        width: 6
-        height: 8
+        x: 188
+        y: 112
+        width: 36
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -408,12 +408,12 @@ TextureImporter:
       name: Trees_10
       rect:
         serializedVersion: 2
-        x: 178
-        y: 137
-        width: 7
+        x: 176
+        y: 130
+        width: 4
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -430,12 +430,12 @@ TextureImporter:
       name: Trees_11
       rect:
         serializedVersion: 2
-        x: 184
-        y: 117
-        width: 10
-        height: 9
+        x: 217
+        y: 120
+        width: 9
+        height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -452,12 +452,12 @@ TextureImporter:
       name: Trees_12
       rect:
         serializedVersion: 2
-        x: 216
-        y: 119
-        width: 11
-        height: 12
+        x: 185
+        y: 118
+        width: 8
+        height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -474,12 +474,12 @@ TextureImporter:
       name: Trees_13
       rect:
         serializedVersion: 2
-        x: 147
-        y: 96
-        width: 55
-        height: 15
+        x: 214
+        y: 111
+        width: 5
+        height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -496,12 +496,12 @@ TextureImporter:
       name: Trees_14
       rect:
         serializedVersion: 2
-        x: 213
-        y: 110
-        width: 7
-        height: 7
+        x: 148
+        y: 97
+        width: 53
+        height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -518,12 +518,12 @@ TextureImporter:
       name: Trees_15
       rect:
         serializedVersion: 2
-        x: 72
-        y: 42
-        width: 48
-        height: 53
+        x: 151
+        y: 96
+        width: 5
+        height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -540,12 +540,12 @@ TextureImporter:
       name: Trees_16
       rect:
         serializedVersion: 2
-        x: 150
+        x: 163
         y: 95
-        width: 7
-        height: 6
+        width: 6
+        height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -562,12 +562,12 @@ TextureImporter:
       name: Trees_17
       rect:
         serializedVersion: 2
-        x: 162
-        y: 94
-        width: 8
-        height: 6
+        x: 174
+        y: 87
+        width: 7
+        height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -584,12 +584,12 @@ TextureImporter:
       name: Trees_18
       rect:
         serializedVersion: 2
-        x: 163
-        y: 89
-        width: 6
-        height: 6
+        x: 73
+        y: 43
+        width: 46
+        height: 51
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -606,12 +606,12 @@ TextureImporter:
       name: Trees_19
       rect:
         serializedVersion: 2
-        x: 173
-        y: 86
-        width: 9
-        height: 12
+        x: 164
+        y: 90
+        width: 4
+        height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -628,12 +628,12 @@ TextureImporter:
       name: Trees_20
       rect:
         serializedVersion: 2
-        x: 0
-        y: 61
-        width: 73
-        height: 29
+        x: 179
+        y: 86
+        width: 8
+        height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -650,12 +650,12 @@ TextureImporter:
       name: Trees_21
       rect:
         serializedVersion: 2
-        x: 152
-        y: 79
-        width: 16
-        height: 11
+        x: 0
+        y: 62
+        width: 72
+        height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -672,12 +672,12 @@ TextureImporter:
       name: Trees_22
       rect:
         serializedVersion: 2
-        x: 178
-        y: 85
-        width: 10
-        height: 7
+        x: 153
+        y: 80
+        width: 14
+        height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -694,12 +694,12 @@ TextureImporter:
       name: Trees_23
       rect:
         serializedVersion: 2
-        x: 5
-        y: 42
-        width: 27
-        height: 20
+        x: 6
+        y: 43
+        width: 25
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -716,12 +716,12 @@ TextureImporter:
       name: Trees_24
       rect:
         serializedVersion: 2
-        x: 36
-        y: 44
-        width: 26
-        height: 18
+        x: 37
+        y: 45
+        width: 24
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -738,7 +738,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 93e759da7762dea418c5cce1c6ee9bd0
     internalID: 0
     vertices: []
     indices: 
@@ -746,7 +746,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Trees_0: 2572236292851511218
       Trees_1: 6224024930817484846
