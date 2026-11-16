@@ -59,11 +59,11 @@ public class MushroomBuddyMovement : MonoBehaviour
         animator.SetBool("isWalking", moveInput != 0);
         if (moveInput > 0)
         {
-            spriteRenderer.flipX = false;
+            spriteRenderer.flipX = isUnderground;
         }
         else if (moveInput < 0)
         {
-            spriteRenderer.flipX = true;
+            spriteRenderer.flipX = !isUnderground;
         }
     }
 
@@ -80,16 +80,24 @@ public class MushroomBuddyMovement : MonoBehaviour
             return;
         }
 
+        Collider2D groundCollider = groundPlatform.GetComponent<Collider2D>();
+
+        if (groundCollider == null)
+        {
+            Debug.LogWarning("Ground platform has noCollider");
+            return;
+        }
+
         isUnderground = !isUnderground;
 
-        float platformY = groundPlatform.position.y;
-        float platformHalfHeight = groundPlatform.localScale.y / 2f;
         float playerHalfHeight = GetComponent<Collider2D>().bounds.extents.y;
-        float distance = platformHalfHeight + playerHalfHeight + 0.1f;
+        float distance = playerHalfHeight + 0.1f;
 
         if (isUnderground)
         {
-            transform.position = new Vector3(transform.position.x, platformY - distance, transform.position.z);
+            float bottomOfGround = groundCollider.bounds.min.y;
+
+            transform.position = new Vector3(transform.position.x, bottomOfGround - distance, transform.position.z);
 
             transform.rotation = Quaternion.Euler(0, 0, 180);
             rb.gravityScale = -1f;
@@ -99,7 +107,9 @@ public class MushroomBuddyMovement : MonoBehaviour
 
         else
         {
-            transform.position = new Vector3(transform.position.x, platformY + distance, transform.position.z);
+            float topOfGround = groundCollider.bounds.max.y;
+
+            transform.position = new Vector3(transform.position.x, topOfGround + distance, transform.position.z);
 
             transform.rotation = Quaternion.identity;
             rb.gravityScale = 1f;

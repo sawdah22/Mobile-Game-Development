@@ -34,5 +34,8 @@ public class PlayerSpawner : MonoBehaviour
 
         MushroomBuddyMovement movement = player.GetComponent<MushroomBuddyMovement>();
         movement.groundPlatform = groundPlatform;
+
+        CameraFollow cameraFollow = Camera.main.GetComponent<CameraFollow>();
+        cameraFollow.target = player.transform;
     }
 }
