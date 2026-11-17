@@ -30,6 +30,14 @@ public class MushroomBuddyMovement : MonoBehaviour
 
     void Update()
     {
+        if (!TutorialManager.canMove)
+        {
+            moveInput = 0f;
+            MobileControls.horizontalInput = 0f;
+            MobileControls.jumpPressed = false;
+            MobileControls.flipPressed = false;
+            return;
+        }
         moveInput = Input.GetAxis("Horizontal");
 
         if (MobileControls.horizontalInput != 0)
@@ -40,7 +48,7 @@ public class MushroomBuddyMovement : MonoBehaviour
 
         animator.SetBool("isGrounded", isGrounded);
 
-        if ((Input.GetKeyDown(KeyCode.Space) || MobileControls.jumpPressed) && isGrounded)
+        if (TutorialManager.canJump && (Input.GetKeyDown(KeyCode.Space) || MobileControls.jumpPressed) && isGrounded)
         {
             float jumpDirection = isUnderground ? -1f : 1f;
 
@@ -49,7 +57,7 @@ public class MushroomBuddyMovement : MonoBehaviour
 
         MobileControls.jumpPressed = false;
 
-        if (Input.GetKeyDown(KeyCode.F) || MobileControls.flipPressed)
+        if (TutorialManager.canFlip && (Input.GetKeyDown(KeyCode.F) || MobileControls.flipPressed))
         {
             FlipWorld();
         }
