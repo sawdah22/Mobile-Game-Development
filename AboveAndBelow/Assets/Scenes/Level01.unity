@@ -2697,8 +2697,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278321666
+  m_fontColor: {r: 0.009433985, g: 0.009433985, b: 0.009433985, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3519,6 +3519,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScreenOrientationManager
   useLandscape: 1
   rotatePhonePanel: {fileID: 214485060}
+  pauseButton: {fileID: 358082834}
 --- !u!4 &504927522
 Transform:
   m_ObjectHideFlags: 0
@@ -3564,6 +3565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
   pausePanel: {fileID: 1472427814}
+  pauseButton: {fileID: 358082834}
 --- !u!4 &519324865
 Transform:
   m_ObjectHideFlags: 0
@@ -10567,7 +10569,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2000, y: 1100}
+  m_SizeDelta: {x: 2200, y: 1200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1416488036
 GameObject:

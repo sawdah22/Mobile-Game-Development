@@ -4,6 +4,7 @@ public class ScreenOrientationManager : MonoBehaviour
 {
     public bool useLandscape = false;
     public GameObject rotatePhonePanel;
+    public GameObject pauseButton;
 
     void Start()
     {
@@ -31,6 +32,18 @@ public class ScreenOrientationManager : MonoBehaviour
         {
             bool isportrait = Screen.width < Screen.height;
             rotatePhonePanel.SetActive(isportrait);
+
+            if (pauseButton != null)
+            {
+               if (isportrait)
+                {
+                    pauseButton.SetActive(false);
+                }
+                else if (Time.timeScale == 1f) 
+                {
+                    pauseButton.SetActive(true);
+                }
+            }
         }
 
     }

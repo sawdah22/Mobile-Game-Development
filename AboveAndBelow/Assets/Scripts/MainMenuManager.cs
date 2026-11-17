@@ -10,6 +10,14 @@ public class MainMenuManager : MonoBehaviour
         SceneManager.LoadScene("CharacterSelection");
     }
 
+    public void ReplayTutorial()
+    {
+        PlayerPrefs.DeleteKey("TutorialCompleted");
+        PlayerPrefs.Save();
+
+        PlayGame();
+    }
+
     public void OpenSettings()
     {
         SettingsPanel.SetActive(true);
